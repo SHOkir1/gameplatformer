@@ -1,12 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneSwitcher : MonoBehaviour
+public class SceneSwitcher_MtoC : MonoBehaviour
 {
     public string sceneNameToLoad;
 
     public void LoadScene()
     {
-        SceneManager.LoadScene(sceneNameToLoad);
+        SceneManager.LoadScene("Credits");
     }
 }
