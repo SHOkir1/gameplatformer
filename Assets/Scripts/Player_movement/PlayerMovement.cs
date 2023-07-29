@@ -6,8 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 7f;
 
     private Rigidbody2D rb;
-    private bool isGrounded = false;
-
+    public bool isGrounded = false;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -34,12 +33,5 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        // Check if the player is touching the ground
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-        }
-    }
+    
 }
